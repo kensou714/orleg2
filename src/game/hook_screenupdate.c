@@ -72,6 +72,8 @@ int hook_screen_update(int a1,int a2,int a3,int a4)
 		}
 		
 	}
+	///cheats
+//	V8(0x20020104) = 4;
 
 
   ++P32_200200FC;

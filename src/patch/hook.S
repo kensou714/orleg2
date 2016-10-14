@@ -3,3 +3,6 @@
 
 	//赠送游戏初始道具的地方
 	XXPATCH16JMP16(0x10073A02,hook_GiveStartItem)
+
+	//启动函数
+	XXPATCH16JMP16(0x1002F90C,hook_Init)

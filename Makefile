@@ -38,6 +38,7 @@ GAMEOBJ	=	$(OBJDIR)/patch.o\
 			$(GAMEOBJDIR)/retarget.o\
 			$(GAMEOBJDIR)/hook_screenupdate.o\
 			$(GAMEOBJDIR)/hook_givestartitem.o\
+			$(GAMEOBJDIR)/hook_init.o\
 			$(SYSTEMOBJDIR)/PlayerSelect.o
 
 #############################################################################
