@@ -37,6 +37,7 @@ GLOBAL_INCLUDE = $(SRCDIR)/xxpacth_include.h
 GAMEOBJ	=	$(OBJDIR)/patch.o\
 			$(GAMEOBJDIR)/retarget.o\
 			$(GAMEOBJDIR)/game_test.o\
+			$(GAMEOBJDIR)/hook_screenupdate.o\
 			$(SYSTEMOBJDIR)/PlayerSelect.o
 
 #############################################################################

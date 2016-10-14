@@ -1,7 +1,7 @@
 #ifndef __GAME_DEF_H__
 #define __GAME_DEF_H__
 #include <stdint.h>
-#define __fastcall
+//#define __fastcall
 
 #define __int8 char
 #define __int16 short
