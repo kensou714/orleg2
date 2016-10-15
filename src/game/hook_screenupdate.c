@@ -72,8 +72,11 @@ int hook_screen_update(int a1,int a2,int a3,int a4)
 		}
 		
 	}
-	///cheats
-//	V8(0x20020104) = 4;
+	
+	V8(0x200203E2) = 1;//这里让特殊人物可选
+	V8(0x200203E3) = 1;
+	V8(0x200203E4) = 1;
+	V8(0x200203E5) = 1;
 
 
   ++P32_200200FC;
