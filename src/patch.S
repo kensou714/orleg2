@@ -15,25 +15,20 @@ XXEXPORT_START(dumpy)
 
 
 
-.file ".\\src\\patch\\debug.S"
+.file ".\\src\\patch\\hook.S"
 .line 1
-	XXPATCH16(0x1002F9F0)
-#if 0
-	BL	DebugMainMenu
-#endif
+	XXPATCH16JMP16(0x1002F81A,hook_screen_update)
 
+	//赠送游戏初始道具的地方
 
-.file ".\\src\\patch\\debug.S"
-.line 6
-	XXPATCH16(0x1003F38A)
-DebugMainMenu:
+.file ".\\src\\patch\\hook.S"
+.line 7
+	XXPATCH16JMP16(0x1002F90C,hook_Init)
+.file ".\\src\\patch\\hook.S"
+.line 4
+	XXPATCH16JMP16(0x10073A02,hook_GiveStartItem)
 
-
-
-
-
-
-
+	//启动函数
 
 .file __FILE__
 .line __LINE__
